@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f74c07aa33304bd0a48503d1dbefaaa9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f74c07aa33304bd0a48503d1dbefaaa9" ></div>
+        
+</body>
+<script>    
+    
+            var map_f74c07aa33304bd0a48503d1dbefaaa9 = L.map(
+                "map_f74c07aa33304bd0a48503d1dbefaaa9",
+                {
+                    center: [-1.6948082, 106.238069],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.58,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25869a5770d74186bae93a688f609395 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+            var marker_bbc67fcc30344e5484afae9479e0da11 = L.marker(
+                [4.695135, 96.7493993],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_bb00c28b429c42e6b9aa17b18fbab6b5 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/1200px-Coat_of_arms_of_Aceh.svg.png"});
+        marker_bbc67fcc30344e5484afae9479e0da11.setIcon(custom_icon_bb00c28b429c42e6b9aa17b18fbab6b5);
+        
+    
+        var popup_675fe6f557ab4b718c9d966f9b88cff7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be74bd40821f42c4b430baf4121fe335 = $(`<div id="html_be74bd40821f42c4b430baf4121fe335" style="width: 100.0%; height: 100.0%;"><h4><b>Aceh</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_675fe6f557ab4b718c9d966f9b88cff7.setContent(html_be74bd40821f42c4b430baf4121fe335);
+        
+
+        marker_bbc67fcc30344e5484afae9479e0da11.bindPopup(popup_675fe6f557ab4b718c9d966f9b88cff7)
+        ;
+
+        
+    
+    
+            marker_bbc67fcc30344e5484afae9479e0da11.bindTooltip(
+                `<div>
+                     Aceh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dafd47d22b1d4028ae248de2e70ea295 = L.marker(
+                [-8.4095178, 115.188916],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_55066c4e1f144c919e4dcdaa6503e891 = L.icon({"iconSize": [30, 30], "iconUrl": "https://4.bp.blogspot.com/-ELlrLdH0frM/WSz4AjqIWaI/AAAAAAAAASY/EF5ayA5zXn05TXw53cRUVTJeh6lzUJDDwCLcB/s400/Lambang%2BDaerah%2BProvinsi%2BBali%2B2.png"});
+        marker_dafd47d22b1d4028ae248de2e70ea295.setIcon(custom_icon_55066c4e1f144c919e4dcdaa6503e891);
+        
+    
+        var popup_e42e040f9a7f42b29b297d52a9c14f1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ac4ff29169a4565b4d908f2c5f9367b = $(`<div id="html_5ac4ff29169a4565b4d908f2c5f9367b" style="width: 100.0%; height: 100.0%;"><h4><b>Bali</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>10</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>2</b></center></td></tr></tbody></table></div>`)[0];
+            popup_e42e040f9a7f42b29b297d52a9c14f1d.setContent(html_5ac4ff29169a4565b4d908f2c5f9367b);
+        
+
+        marker_dafd47d22b1d4028ae248de2e70ea295.bindPopup(popup_e42e040f9a7f42b29b297d52a9c14f1d)
+        ;
+
+        
+    
+    
+            marker_dafd47d22b1d4028ae248de2e70ea295.bindTooltip(
+                `<div>
+                     Bali
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1a0352739324c52b41c1e362345dc91 = L.marker(
+                [-2.7410513, 106.4405872],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_e3da004af1dd4cb7a885dfb955a4932a = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/1200px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"});
+        marker_a1a0352739324c52b41c1e362345dc91.setIcon(custom_icon_e3da004af1dd4cb7a885dfb955a4932a);
+        
+    
+        var popup_e16b198bee0e4ad3b7d288bb5b9a9ffe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dc50561723c4a87915be10eb341bbcc = $(`<div id="html_2dc50561723c4a87915be10eb341bbcc" style="width: 100.0%; height: 100.0%;"><h4><b>Bangka Belitung</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_e16b198bee0e4ad3b7d288bb5b9a9ffe.setContent(html_2dc50561723c4a87915be10eb341bbcc);
+        
+
+        marker_a1a0352739324c52b41c1e362345dc91.bindPopup(popup_e16b198bee0e4ad3b7d288bb5b9a9ffe)
+        ;
+
+        
+    
+    
+            marker_a1a0352739324c52b41c1e362345dc91.bindTooltip(
+                `<div>
+                     Bangka Belitung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d3388e82a564b779aafb8e5b754f05c = L.marker(
+                [-6.4058172, 106.0640179],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_90d3b06b48954f27bda398d726edf34e = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Coat_of_arms_of_Banten.png"});
+        marker_5d3388e82a564b779aafb8e5b754f05c.setIcon(custom_icon_90d3b06b48954f27bda398d726edf34e);
+        
+    
+        var popup_21d22394ef1b4a9aacb41bbe5f934ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06785b539ae846ee92e2ed128673c2f4 = $(`<div id="html_06785b539ae846ee92e2ed128673c2f4" style="width: 100.0%; height: 100.0%;"><h4><b>Banten</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>106</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>4</b></center></td></tr></tbody></table></div>`)[0];
+            popup_21d22394ef1b4a9aacb41bbe5f934ea8.setContent(html_06785b539ae846ee92e2ed128673c2f4);
+        
+
+        marker_5d3388e82a564b779aafb8e5b754f05c.bindPopup(popup_21d22394ef1b4a9aacb41bbe5f934ea8)
+        ;
+
+        
+    
+    
+            marker_5d3388e82a564b779aafb8e5b754f05c.bindTooltip(
+                `<div>
+                     Banten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd71b2259568444bbc1d3f9c48bd5ef1 = L.marker(
+                [-3.5778471, 102.3463875],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_7c491adb51d641de96bdde3283894d41 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Coat_of_arms_of_Bengkulu.png"});
+        marker_fd71b2259568444bbc1d3f9c48bd5ef1.setIcon(custom_icon_7c491adb51d641de96bdde3283894d41);
+        
+    
+        var popup_e9551351bc144de28314ca0c0e9712d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40f23775f4294e65b25c4d100ae465e1 = $(`<div id="html_40f23775f4294e65b25c4d100ae465e1" style="width: 100.0%; height: 100.0%;"><h4><b>Bengkulu</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_e9551351bc144de28314ca0c0e9712d1.setContent(html_40f23775f4294e65b25c4d100ae465e1);
+        
+
+        marker_fd71b2259568444bbc1d3f9c48bd5ef1.bindPopup(popup_e9551351bc144de28314ca0c0e9712d1)
+        ;
+
+        
+    
+    
+            marker_fd71b2259568444bbc1d3f9c48bd5ef1.bindTooltip(
+                `<div>
+                     Bengkulu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cda2e383b2340eab88a036fdb50b23f = L.marker(
+                [-7.150975, 110.1402594],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_5cc0b579c33c41bcbea1d6bdbad73656 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jawa_Tengah_Logo.svg/526px-Jawa_Tengah_Logo.svg.png"});
+        marker_6cda2e383b2340eab88a036fdb50b23f.setIcon(custom_icon_5cc0b579c33c41bcbea1d6bdbad73656);
+        
+    
+        var popup_3f0e91d9b34a4cf5b1b3524a29d8b23f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15241ae45a1642ed8c3788c0a1aeb047 = $(`<div id="html_15241ae45a1642ed8c3788c0a1aeb047" style="width: 100.0%; height: 100.0%;"><h4><b>Central Java</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>63</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>7</b></center></td></tr></tbody></table></div>`)[0];
+            popup_3f0e91d9b34a4cf5b1b3524a29d8b23f.setContent(html_15241ae45a1642ed8c3788c0a1aeb047);
+        
+
+        marker_6cda2e383b2340eab88a036fdb50b23f.bindPopup(popup_3f0e91d9b34a4cf5b1b3524a29d8b23f)
+        ;
+
+        
+    
+    
+            marker_6cda2e383b2340eab88a036fdb50b23f.bindTooltip(
+                `<div>
+                     Central Java
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6fc6fb2173b48698591674441bb219b = L.marker(
+                [-1.6814878, 113.3823545],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_a62e8063766a41e2b87ed3c4b64d0418 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Coat_of_arms_of_Central_Kalimantan.png"});
+        marker_f6fc6fb2173b48698591674441bb219b.setIcon(custom_icon_a62e8063766a41e2b87ed3c4b64d0418);
+        
+    
+        var popup_7c0f39d1eaf144e4a7d5e292965f516e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_725d7b23444544dcbf5118c848d19d8a = $(`<div id="html_725d7b23444544dcbf5118c848d19d8a" style="width: 100.0%; height: 100.0%;"><h4><b>Central Kalimantan</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>7</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_7c0f39d1eaf144e4a7d5e292965f516e.setContent(html_725d7b23444544dcbf5118c848d19d8a);
+        
+
+        marker_f6fc6fb2173b48698591674441bb219b.bindPopup(popup_7c0f39d1eaf144e4a7d5e292965f516e)
+        ;
+
+        
+    
+    
+            marker_f6fc6fb2173b48698591674441bb219b.bindTooltip(
+                `<div>
+                     Central Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8546ab3dfb4f47d398728fd872bc0a5b = L.marker(
+                [-1.4300254, 121.4456179],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_babc0591d2374b39a02131f0fd65db70 = L.icon({"iconSize": [30, 30], "iconUrl": "http://1.bp.blogspot.com/-Mb3OPbim3Gw/VrYYo_59GjI/AAAAAAAAVFw/oh24hNmZ1NU/s1600/LOGO%2BSULAWESI%2BTENGAH.png"});
+        marker_8546ab3dfb4f47d398728fd872bc0a5b.setIcon(custom_icon_babc0591d2374b39a02131f0fd65db70);
+        
+    
+        var popup_f6afd2fd4a1a48c3af100cc39407c40d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c57a8acf312345b299332115ef253e8e = $(`<div id="html_c57a8acf312345b299332115ef253e8e" style="width: 100.0%; height: 100.0%;"><h4><b>Central Sulawesi</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_f6afd2fd4a1a48c3af100cc39407c40d.setContent(html_c57a8acf312345b299332115ef253e8e);
+        
+
+        marker_8546ab3dfb4f47d398728fd872bc0a5b.bindPopup(popup_f6afd2fd4a1a48c3af100cc39407c40d)
+        ;
+
+        
+    
+    
+            marker_8546ab3dfb4f47d398728fd872bc0a5b.bindTooltip(
+                `<div>
+                     Central Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9270e56c5f6247afa92769c8e21ba50f = L.marker(
+                [-7.5360639, 112.2384017],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_23cb20a632674249a5bd1d9e3be13882 = L.icon({"iconSize": [30, 30], "iconUrl": "https://2.bp.blogspot.com/-S1hrqQnm0nc/XDCpZ6C7iSI/AAAAAAAABvI/MlNdKdkNBHQa0lU-1I0gyTT5FbFSR2K0QCLcBGAs/s400/logo%2Bprovinsi%2Bjawa%2Btimur.png"});
+        marker_9270e56c5f6247afa92769c8e21ba50f.setIcon(custom_icon_23cb20a632674249a5bd1d9e3be13882);
+        
+    
+        var popup_483c53fec65d4b53b48a7ca97033f76e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b46965ba338410691e4b5da6bf1fb85 = $(`<div id="html_7b46965ba338410691e4b5da6bf1fb85" style="width: 100.0%; height: 100.0%;"><h4><b>East Java</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>90</b></center></td><td><center><b style='color:green'>11</b></center></td><td><center><b>7</b></center></td></tr></tbody></table></div>`)[0];
+            popup_483c53fec65d4b53b48a7ca97033f76e.setContent(html_7b46965ba338410691e4b5da6bf1fb85);
+        
+
+        marker_9270e56c5f6247afa92769c8e21ba50f.bindPopup(popup_483c53fec65d4b53b48a7ca97033f76e)
+        ;
+
+        
+    
+    
+            marker_9270e56c5f6247afa92769c8e21ba50f.bindTooltip(
+                `<div>
+                     East Java
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5758a6ae4cb4f388b8c85c4716511c5 = L.marker(
+                [1.6406296, 116.419389],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_5dc3e8fbb4314e1f88b23ca3562113f1 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_of_East_Kalimantan.svg/1200px-Coat_of_arms_of_East_Kalimantan.svg.png"});
+        marker_b5758a6ae4cb4f388b8c85c4716511c5.setIcon(custom_icon_5dc3e8fbb4314e1f88b23ca3562113f1);
+        
+    
+        var popup_9192d61510a54c1db9364b905d8f77aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f45b52b0c694433bd2d896df60dc2f8 = $(`<div id="html_4f45b52b0c694433bd2d896df60dc2f8" style="width: 100.0%; height: 100.0%;"><h4><b>East Kalimantan</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>17</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_9192d61510a54c1db9364b905d8f77aa.setContent(html_4f45b52b0c694433bd2d896df60dc2f8);
+        
+
+        marker_b5758a6ae4cb4f388b8c85c4716511c5.bindPopup(popup_9192d61510a54c1db9364b905d8f77aa)
+        ;
+
+        
+    
+    
+            marker_b5758a6ae4cb4f388b8c85c4716511c5.bindTooltip(
+                `<div>
+                     East Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f2e4c71faa47b0a27e2e51a066dfc4 = L.marker(
+                [-8.6573819, 121.0793705],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_6e7440bbaf2a4db1a9fea20b5e23b614 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Coat_of_arms_of_East_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_East_Nusa_Tenggara.svg.png"});
+        marker_b3f2e4c71faa47b0a27e2e51a066dfc4.setIcon(custom_icon_6e7440bbaf2a4db1a9fea20b5e23b614);
+        
+    
+        var popup_eab423b06b7644599d3d32c8db5182ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_856723061ebc45bba664b26489fb5c83 = $(`<div id="html_856723061ebc45bba664b26489fb5c83" style="width: 100.0%; height: 100.0%;"><h4><b>East Nusa Tenggara</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_eab423b06b7644599d3d32c8db5182ff.setContent(html_856723061ebc45bba664b26489fb5c83);
+        
+
+        marker_b3f2e4c71faa47b0a27e2e51a066dfc4.bindPopup(popup_eab423b06b7644599d3d32c8db5182ff)
+        ;
+
+        
+    
+    
+            marker_b3f2e4c71faa47b0a27e2e51a066dfc4.bindTooltip(
+                `<div>
+                     East Nusa Tenggara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95dca31263b34addae8c018ce5d8a988 = L.marker(
+                [0.6999372, 122.4467238],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_9257114f5da244f897472ace213ce1f0 = L.icon({"iconSize": [30, 30], "iconUrl": "https://3.bp.blogspot.com/-75ec3fJKhgU/UNl0Tdg9UXI/AAAAAAAAIrg/YztGIINVa2w/s1600/LOGO+PROVINSI+GORONTALO.png"});
+        marker_95dca31263b34addae8c018ce5d8a988.setIcon(custom_icon_9257114f5da244f897472ace213ce1f0);
+        
+    
+        var popup_bd450f5d73c840bcad45382a14f8bc54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d67defd0ed54d6aa1163fde30c3ef3f = $(`<div id="html_6d67defd0ed54d6aa1163fde30c3ef3f" style="width: 100.0%; height: 100.0%;"><h4><b>Gorontalo</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>0</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_bd450f5d73c840bcad45382a14f8bc54.setContent(html_6d67defd0ed54d6aa1163fde30c3ef3f);
+        
+
+        marker_95dca31263b34addae8c018ce5d8a988.bindPopup(popup_bd450f5d73c840bcad45382a14f8bc54)
+        ;
+
+        
+    
+    
+            marker_95dca31263b34addae8c018ce5d8a988.bindTooltip(
+                `<div>
+                     Gorontalo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bd5c4c1cc8e4e27bf7ac39cf3e98fef = L.marker(
+                [-6.211544, 106.845172],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_f336fd9f11094c3f90a00e32c2372db3 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png"});
+        marker_9bd5c4c1cc8e4e27bf7ac39cf3e98fef.setIcon(custom_icon_f336fd9f11094c3f90a00e32c2372db3);
+        
+    
+        var popup_80cc3b68f84f4f15b77aa112414bac0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1542a45a996b4f87901e81a26834cf84 = $(`<div id="html_1542a45a996b4f87901e81a26834cf84" style="width: 100.0%; height: 100.0%;"><h4><b>Jakarta</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>720</b></center></td><td><center><b style='color:green'>45</b></center></td><td><center><b>68</b></center></td></tr></tbody></table></div>`)[0];
+            popup_80cc3b68f84f4f15b77aa112414bac0e.setContent(html_1542a45a996b4f87901e81a26834cf84);
+        
+
+        marker_9bd5c4c1cc8e4e27bf7ac39cf3e98fef.bindPopup(popup_80cc3b68f84f4f15b77aa112414bac0e)
+        ;
+
+        
+    
+    
+            marker_9bd5c4c1cc8e4e27bf7ac39cf3e98fef.bindTooltip(
+                `<div>
+                     Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b714335cc994e3180a75f3815bf894b = L.marker(
+                [-1.4851831, 102.4380581],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_3b68c06b97914a08a116fe20f543f44e = L.icon({"iconSize": [30, 30], "iconUrl": "https://2.bp.blogspot.com/-y0bGVkW2XfY/Tdui2omcCgI/AAAAAAAADro/Ufjlj4w8nhs/s1600/logo+Jambi.png"});
+        marker_4b714335cc994e3180a75f3815bf894b.setIcon(custom_icon_3b68c06b97914a08a116fe20f543f44e);
+        
+    
+        var popup_a372137a4bde426bb9e6e6e03f68682a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8010f5c9667d43849f618e68e0c459ba = $(`<div id="html_8010f5c9667d43849f618e68e0c459ba" style="width: 100.0%; height: 100.0%;"><h4><b>Jambi</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_a372137a4bde426bb9e6e6e03f68682a.setContent(html_8010f5c9667d43849f618e68e0c459ba);
+        
+
+        marker_4b714335cc994e3180a75f3815bf894b.bindPopup(popup_a372137a4bde426bb9e6e6e03f68682a)
+        ;
+
+        
+    
+    
+            marker_4b714335cc994e3180a75f3815bf894b.bindTooltip(
+                `<div>
+                     Jambi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae5d1aa7a63a477587558634b2100cb7 = L.marker(
+                [-4.5585849, 105.4068079],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_c8c0b858ceb2455fa07986357014425e = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lampung_coa.png"});
+        marker_ae5d1aa7a63a477587558634b2100cb7.setIcon(custom_icon_c8c0b858ceb2455fa07986357014425e);
+        
+    
+        var popup_90100f44118f43f5ae9d9e74c7810f17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc8bd73bcfd24db6b0f0ae4948c0b6da = $(`<div id="html_dc8bd73bcfd24db6b0f0ae4948c0b6da" style="width: 100.0%; height: 100.0%;"><h4><b>Lampung</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>4</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_90100f44118f43f5ae9d9e74c7810f17.setContent(html_dc8bd73bcfd24db6b0f0ae4948c0b6da);
+        
+
+        marker_ae5d1aa7a63a477587558634b2100cb7.bindPopup(popup_90100f44118f43f5ae9d9e74c7810f17)
+        ;
+
+        
+    
+    
+            marker_ae5d1aa7a63a477587558634b2100cb7.bindTooltip(
+                `<div>
+                     Lampung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19ac12867fb34bb49d850c756c12a127 = L.marker(
+                [-3.2384616, 130.1452734],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_0a0ad71d02a840b480d74eb9fe55a096 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lambang_Provinsi_Maluku.png"});
+        marker_19ac12867fb34bb49d850c756c12a127.setIcon(custom_icon_0a0ad71d02a840b480d74eb9fe55a096);
+        
+    
+        var popup_61585ab72fc74281bce4c3bbf2da06b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86fadf8ea681467c969707e725e2e2b9 = $(`<div id="html_86fadf8ea681467c969707e725e2e2b9" style="width: 100.0%; height: 100.0%;"><h4><b>Maluku</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_61585ab72fc74281bce4c3bbf2da06b1.setContent(html_86fadf8ea681467c969707e725e2e2b9);
+        
+
+        marker_19ac12867fb34bb49d850c756c12a127.bindPopup(popup_61585ab72fc74281bce4c3bbf2da06b1)
+        ;
+
+        
+    
+    
+            marker_19ac12867fb34bb49d850c756c12a127.bindTooltip(
+                `<div>
+                     Maluku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4b36e31fd6a4f89972eca8c10db8ad2 = L.marker(
+                [1.5709993, 127.8087693],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_19d676cec6e5457ebfe20b078385801b = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Coat_of_arms_of_North_Maluku.png/1200px-Coat_of_arms_of_North_Maluku.png"});
+        marker_e4b36e31fd6a4f89972eca8c10db8ad2.setIcon(custom_icon_19d676cec6e5457ebfe20b078385801b);
+        
+    
+        var popup_b829e4b540f945249083683184bf38a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10170e0e6c464339813d28a333fd483c = $(`<div id="html_10170e0e6c464339813d28a333fd483c" style="width: 100.0%; height: 100.0%;"><h4><b>North Maluku</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_b829e4b540f945249083683184bf38a5.setContent(html_10170e0e6c464339813d28a333fd483c);
+        
+
+        marker_e4b36e31fd6a4f89972eca8c10db8ad2.bindPopup(popup_b829e4b540f945249083683184bf38a5)
+        ;
+
+        
+    
+    
+            marker_e4b36e31fd6a4f89972eca8c10db8ad2.bindTooltip(
+                `<div>
+                     North Maluku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f532a2b7026445d6a54e9e06a21e6039 = L.marker(
+                [1.5802128, 114.0308546],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_506e191bb4c84e67bc6327c5487d69cb = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Emblem_of_North_Kalimantan.png"});
+        marker_f532a2b7026445d6a54e9e06a21e6039.setIcon(custom_icon_506e191bb4c84e67bc6327c5487d69cb);
+        
+    
+        var popup_f3e7559e3b614303bec5822b6a427080 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9b3a7ae3b8042d9ba9b9dd61b14a439 = $(`<div id="html_e9b3a7ae3b8042d9ba9b9dd61b14a439" style="width: 100.0%; height: 100.0%;"><h4><b>North Kalimantan</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_f3e7559e3b614303bec5822b6a427080.setContent(html_e9b3a7ae3b8042d9ba9b9dd61b14a439);
+        
+
+        marker_f532a2b7026445d6a54e9e06a21e6039.bindPopup(popup_f3e7559e3b614303bec5822b6a427080)
+        ;
+
+        
+    
+    
+            marker_f532a2b7026445d6a54e9e06a21e6039.bindTooltip(
+                `<div>
+                     North Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed346c191e4f4439bc6650f39f87c7e4 = L.marker(
+                [0.6246932, 123.9750018],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_4501b028eb47431cac8dfcf94974c546 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/1200px-Coat_of_arms_of_North_Sulawesi.svg.png"});
+        marker_ed346c191e4f4439bc6650f39f87c7e4.setIcon(custom_icon_4501b028eb47431cac8dfcf94974c546);
+        
+    
+        var popup_1b6d3eee581242a8a4388b576baa03fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa9b1fcb4b70419b879d268af348b3d1 = $(`<div id="html_aa9b1fcb4b70419b879d268af348b3d1" style="width: 100.0%; height: 100.0%;"><h4><b>North Sulawesi</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_1b6d3eee581242a8a4388b576baa03fe.setContent(html_aa9b1fcb4b70419b879d268af348b3d1);
+        
+
+        marker_ed346c191e4f4439bc6650f39f87c7e4.bindPopup(popup_1b6d3eee581242a8a4388b576baa03fe)
+        ;
+
+        
+    
+    
+            marker_ed346c191e4f4439bc6650f39f87c7e4.bindTooltip(
+                `<div>
+                     North Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76d26f2dbe794e5fa28b68ae12439df6 = L.marker(
+                [2.1153547, 99.5450974],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_b41ee5cd0097439a9429f99326b9e175 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/1200px-Coat_of_arms_of_North_Sumatra.svg.png"});
+        marker_76d26f2dbe794e5fa28b68ae12439df6.setIcon(custom_icon_b41ee5cd0097439a9429f99326b9e175);
+        
+    
+        var popup_58d28aa6edd44460b61a56e3a9d7ee80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a73e159ec304f3092fb44b5a8cf98e2 = $(`<div id="html_3a73e159ec304f3092fb44b5a8cf98e2" style="width: 100.0%; height: 100.0%;"><h4><b>North Sumatera</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>8</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></tbody></table></div>`)[0];
+            popup_58d28aa6edd44460b61a56e3a9d7ee80.setContent(html_3a73e159ec304f3092fb44b5a8cf98e2);
+        
+
+        marker_76d26f2dbe794e5fa28b68ae12439df6.bindPopup(popup_58d28aa6edd44460b61a56e3a9d7ee80)
+        ;
+
+        
+    
+    
+            marker_76d26f2dbe794e5fa28b68ae12439df6.bindTooltip(
+                `<div>
+                     North Sumatera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cbe9789cf7a42cd9c0039bb8996812d = L.marker(
+                [-4.269928, 138.0803529],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_8a5ad83c59674c67b5d0d4c702c6fcdc = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Coat_of_Arms_of_Papua.png"});
+        marker_8cbe9789cf7a42cd9c0039bb8996812d.setIcon(custom_icon_8a5ad83c59674c67b5d0d4c702c6fcdc);
+        
+    
+        var popup_79e8fe549f874e9e9400803a225b7af2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f47c8cb85d04245abfbabe8055bba6c = $(`<div id="html_0f47c8cb85d04245abfbabe8055bba6c" style="width: 100.0%; height: 100.0%;"><h4><b>Papua</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>9</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_79e8fe549f874e9e9400803a225b7af2.setContent(html_0f47c8cb85d04245abfbabe8055bba6c);
+        
+
+        marker_8cbe9789cf7a42cd9c0039bb8996812d.bindPopup(popup_79e8fe549f874e9e9400803a225b7af2)
+        ;
+
+        
+    
+    
+            marker_8cbe9789cf7a42cd9c0039bb8996812d.bindTooltip(
+                `<div>
+                     Papua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dddde926320741008fe4146dad26c1fb = L.marker(
+                [0.2933469, 101.7068294],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_3692742a33ae48e8a5a588520c311107 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/1200px-Coat_of_arms_of_Riau.svg.png"});
+        marker_dddde926320741008fe4146dad26c1fb.setIcon(custom_icon_3692742a33ae48e8a5a588520c311107);
+        
+    
+        var popup_950a23f62cdc4ff29da438c244783b90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70ce9f84d9334d77933bc1bc7ecd0ab6 = $(`<div id="html_70ce9f84d9334d77933bc1bc7ecd0ab6" style="width: 100.0%; height: 100.0%;"><h4><b>Riau</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_950a23f62cdc4ff29da438c244783b90.setContent(html_70ce9f84d9334d77933bc1bc7ecd0ab6);
+        
+
+        marker_dddde926320741008fe4146dad26c1fb.bindPopup(popup_950a23f62cdc4ff29da438c244783b90)
+        ;
+
+        
+    
+    
+            marker_dddde926320741008fe4146dad26c1fb.bindTooltip(
+                `<div>
+                     Riau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbd11c7fcf164e439dc6cd64ae9e3e52 = L.marker(
+                [3.9456514, 108.1428669],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_c02a1e475c4b41ef8c873c30ef8f9089 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Coat_of_arms_of_Riau_Islands.png"});
+        marker_bbd11c7fcf164e439dc6cd64ae9e3e52.setIcon(custom_icon_c02a1e475c4b41ef8c873c30ef8f9089);
+        
+    
+        var popup_9ed8b6e0a7604ed9a9a008805c7ab552 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d45cd118030e49d1a3c8d673bc0ec132 = $(`<div id="html_d45cd118030e49d1a3c8d673bc0ec132" style="width: 100.0%; height: 100.0%;"><h4><b>Riau Islands</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></tbody></table></div>`)[0];
+            popup_9ed8b6e0a7604ed9a9a008805c7ab552.setContent(html_d45cd118030e49d1a3c8d673bc0ec132);
+        
+
+        marker_bbd11c7fcf164e439dc6cd64ae9e3e52.bindPopup(popup_9ed8b6e0a7604ed9a9a008805c7ab552)
+        ;
+
+        
+    
+    
+            marker_bbd11c7fcf164e439dc6cd64ae9e3e52.bindTooltip(
+                `<div>
+                     Riau Islands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0e344cd4dd74de1ad7428a03fe8e100 = L.marker(
+                [-3.0926415, 115.2837585],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_dcd0b4a6e90a476eb95d5fb85d4658af = L.icon({"iconSize": [30, 30], "iconUrl": "https://pngimage.net/wp-content/uploads/2018/06/logo-provinsi-kalimantan-selatan-png.png"});
+        marker_c0e344cd4dd74de1ad7428a03fe8e100.setIcon(custom_icon_dcd0b4a6e90a476eb95d5fb85d4658af);
+        
+    
+        var popup_bb04ae72d2e240d8a7bf5cd44d51261c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba5ce9d645a044f18da293a8d0f6ebc1 = $(`<div id="html_ba5ce9d645a044f18da293a8d0f6ebc1" style="width: 100.0%; height: 100.0%;"><h4><b>South Kalimantan</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_bb04ae72d2e240d8a7bf5cd44d51261c.setContent(html_ba5ce9d645a044f18da293a8d0f6ebc1);
+        
+
+        marker_c0e344cd4dd74de1ad7428a03fe8e100.bindPopup(popup_bb04ae72d2e240d8a7bf5cd44d51261c)
+        ;
+
+        
+    
+    
+            marker_c0e344cd4dd74de1ad7428a03fe8e100.bindTooltip(
+                `<div>
+                     South Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20797810f0bb4e94a008ec5058906b0f = L.marker(
+                [-3.6687994, 119.9740534],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_69682f4fada84ee696da8652a23b54fe = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coat_of_arms_of_South_Sulawesi.svg/1200px-Coat_of_arms_of_South_Sulawesi.svg.png"});
+        marker_20797810f0bb4e94a008ec5058906b0f.setIcon(custom_icon_69682f4fada84ee696da8652a23b54fe);
+        
+    
+        var popup_05b69042368f49fd8831fd426d773bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b252824ee52443f6b0139ab3114039a3 = $(`<div id="html_b252824ee52443f6b0139ab3114039a3" style="width: 100.0%; height: 100.0%;"><h4><b>South Sulawesi</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>47</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>1</b></center></td></tr></tbody></table></div>`)[0];
+            popup_05b69042368f49fd8831fd426d773bc3.setContent(html_b252824ee52443f6b0139ab3114039a3);
+        
+
+        marker_20797810f0bb4e94a008ec5058906b0f.bindPopup(popup_05b69042368f49fd8831fd426d773bc3)
+        ;
+
+        
+    
+    
+            marker_20797810f0bb4e94a008ec5058906b0f.bindTooltip(
+                `<div>
+                     South Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a33975d637c04870a913984e7bf5f567 = L.marker(
+                [-4.14491, 122.174605],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_6c0e0c29a8e14c4f97f03301c7bdd6ee = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/1200px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"});
+        marker_a33975d637c04870a913984e7bf5f567.setIcon(custom_icon_6c0e0c29a8e14c4f97f03301c7bdd6ee);
+        
+    
+        var popup_d2bfe5abb8644af78f9ed091d8378815 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ab4b9c0c169401eaf84d9d2ec1e91e4 = $(`<div id="html_9ab4b9c0c169401eaf84d9d2ec1e91e4" style="width: 100.0%; height: 100.0%;"><h4><b>Southeast Sulawesi</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>3</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_d2bfe5abb8644af78f9ed091d8378815.setContent(html_9ab4b9c0c169401eaf84d9d2ec1e91e4);
+        
+
+        marker_a33975d637c04870a913984e7bf5f567.bindPopup(popup_d2bfe5abb8644af78f9ed091d8378815)
+        ;
+
+        
+    
+    
+            marker_a33975d637c04870a913984e7bf5f567.bindTooltip(
+                `<div>
+                     Southeast Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_346903f72c9f4c99acbaf841fc97410b = L.marker(
+                [-3.3194374, 103.914399],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_3ca43bf42ec6433fa9616f3975936790 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coat_of_arms_of_South_Sumatra.svg/1200px-Coat_of_arms_of_South_Sumatra.svg.png"});
+        marker_346903f72c9f4c99acbaf841fc97410b.setIcon(custom_icon_3ca43bf42ec6433fa9616f3975936790);
+        
+    
+        var popup_3be910314e614c339a309114b9b84aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b71fd24296cc481cb9093f0471d431cd = $(`<div id="html_b71fd24296cc481cb9093f0471d431cd" style="width: 100.0%; height: 100.0%;"><h4><b>South Sumatera</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_3be910314e614c339a309114b9b84aa5.setContent(html_b71fd24296cc481cb9093f0471d431cd);
+        
+
+        marker_346903f72c9f4c99acbaf841fc97410b.bindPopup(popup_3be910314e614c339a309114b9b84aa5)
+        ;
+
+        
+    
+    
+            marker_346903f72c9f4c99acbaf841fc97410b.bindTooltip(
+                `<div>
+                     South Sumatera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73472c5bd75143be98ff1325ece619df = L.marker(
+                [-7.090911, 107.668887],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_d0bfb5720add4dfa8157e15d4b197282 = L.icon({"iconSize": [30, 30], "iconUrl": "https://3.bp.blogspot.com/-BRV8kAVyi4I/XDX3S86Pk5I/AAAAAAAABwA/K5fnfc4c1VYps0EcV32qP6yB96kghqU3QCLcBGAs/s1600/logo%2Bjawa%2Bbarat.png"});
+        marker_73472c5bd75143be98ff1325ece619df.setIcon(custom_icon_d0bfb5720add4dfa8157e15d4b197282);
+        
+    
+        var popup_3ee3dbda45a049a39ab826e4f7159b79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e414f1468dc4c62aaf453d8d6ee2003 = $(`<div id="html_1e414f1468dc4c62aaf453d8d6ee2003" style="width: 100.0%; height: 100.0%;"><h4><b>West Java</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>149</b></center></td><td><center><b style='color:green'>6</b></center></td><td><center><b>19</b></center></td></tr></tbody></table></div>`)[0];
+            popup_3ee3dbda45a049a39ab826e4f7159b79.setContent(html_1e414f1468dc4c62aaf453d8d6ee2003);
+        
+
+        marker_73472c5bd75143be98ff1325ece619df.bindPopup(popup_3ee3dbda45a049a39ab826e4f7159b79)
+        ;
+
+        
+    
+    
+            marker_73472c5bd75143be98ff1325ece619df.bindTooltip(
+                `<div>
+                     West Java
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71e65e8084104213b7b27c92ee7a48c9 = L.marker(
+                [-0.2787808, 111.4752851],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_79be89c8ae2648d888db8696633ac082 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/1200px-Coat_of_arms_of_West_Kalimantan.svg.png"});
+        marker_71e65e8084104213b7b27c92ee7a48c9.setIcon(custom_icon_79be89c8ae2648d888db8696633ac082);
+        
+    
+        var popup_d96697245b9c42689af73ff22c58e856 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4736fbcd423f4db4a880debb157e969b = $(`<div id="html_4736fbcd423f4db4a880debb157e969b" style="width: 100.0%; height: 100.0%;"><h4><b>West Kalimantan</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>8</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_d96697245b9c42689af73ff22c58e856.setContent(html_4736fbcd423f4db4a880debb157e969b);
+        
+
+        marker_71e65e8084104213b7b27c92ee7a48c9.bindPopup(popup_d96697245b9c42689af73ff22c58e856)
+        ;
+
+        
+    
+    
+            marker_71e65e8084104213b7b27c92ee7a48c9.bindTooltip(
+                `<div>
+                     West Kalimantan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99598cf16fc149689a71ca8ca0e45ce7 = L.marker(
+                [-8.6529334, 117.3616476],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_0b7339234ff348448755fde3ca5a2bdb = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/1200px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"});
+        marker_99598cf16fc149689a71ca8ca0e45ce7.setIcon(custom_icon_0b7339234ff348448755fde3ca5a2bdb);
+        
+    
+        var popup_ba91f97fd0dd4048a71f58892d66805c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9bc6e0f09a54a15b790367f2d92467a = $(`<div id="html_c9bc6e0f09a54a15b790367f2d92467a" style="width: 100.0%; height: 100.0%;"><h4><b>West Nusa Tenggara</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_ba91f97fd0dd4048a71f58892d66805c.setContent(html_c9bc6e0f09a54a15b790367f2d92467a);
+        
+
+        marker_99598cf16fc149689a71ca8ca0e45ce7.bindPopup(popup_ba91f97fd0dd4048a71f58892d66805c)
+        ;
+
+        
+    
+    
+            marker_99598cf16fc149689a71ca8ca0e45ce7.bindTooltip(
+                `<div>
+                     West Nusa Tenggara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f426ef3d6b8845e88cb6b0a07a0bdd85 = L.marker(
+                [-1.3361154, 133.1747162],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_aeb9e1c6ad2148b9af8c7f495a00554d = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Coat_of_arms_of_West_Papua.svg/1200px-Coat_of_arms_of_West_Papua.svg.png"});
+        marker_f426ef3d6b8845e88cb6b0a07a0bdd85.setIcon(custom_icon_aeb9e1c6ad2148b9af8c7f495a00554d);
+        
+    
+        var popup_b62ba1613e1245f093d33265a1d18a72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ff02bb6937549fea67d2544d39c0d3e = $(`<div id="html_3ff02bb6937549fea67d2544d39c0d3e" style="width: 100.0%; height: 100.0%;"><h4><b>West Papua</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>2</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_b62ba1613e1245f093d33265a1d18a72.setContent(html_3ff02bb6937549fea67d2544d39c0d3e);
+        
+
+        marker_f426ef3d6b8845e88cb6b0a07a0bdd85.bindPopup(popup_b62ba1613e1245f093d33265a1d18a72)
+        ;
+
+        
+    
+    
+            marker_f426ef3d6b8845e88cb6b0a07a0bdd85.bindTooltip(
+                `<div>
+                     West Papua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dfe01edae6647008546a09756fec043 = L.marker(
+                [-2.8441371, 119.2320784],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_647f9c895b7245cd81644f35f121856d = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_arms_of_West_Sulawesi.png"});
+        marker_0dfe01edae6647008546a09756fec043.setIcon(custom_icon_647f9c895b7245cd81644f35f121856d);
+        
+    
+        var popup_98526ce69aee4ef286fce29e72327103 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3beef5cd8b2b4b5a9a2e284b9db31e22 = $(`<div id="html_3beef5cd8b2b4b5a9a2e284b9db31e22" style="width: 100.0%; height: 100.0%;"><h4><b>West Sulawesi</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>1</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_98526ce69aee4ef286fce29e72327103.setContent(html_3beef5cd8b2b4b5a9a2e284b9db31e22);
+        
+
+        marker_0dfe01edae6647008546a09756fec043.bindPopup(popup_98526ce69aee4ef286fce29e72327103)
+        ;
+
+        
+    
+    
+            marker_0dfe01edae6647008546a09756fec043.bindTooltip(
+                `<div>
+                     West Sulawesi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_456f7485cfaf4c3091fec14f8831b07b = L.marker(
+                [-0.7399397, 100.8000051],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_4bb4e215ce62434a90b990d678923adf = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Coat_of_arms_of_West_Sumatra.svg/1200px-Coat_of_arms_of_West_Sumatra.svg.png"});
+        marker_456f7485cfaf4c3091fec14f8831b07b.setIcon(custom_icon_4bb4e215ce62434a90b990d678923adf);
+        
+    
+        var popup_b9637677ad624a4cbc7e4e7922ba0e11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_857b3b9259fc4a3b8ba5a2830a6587c2 = $(`<div id="html_857b3b9259fc4a3b8ba5a2830a6587c2" style="width: 100.0%; height: 100.0%;"><h4><b>West Sumatra</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>5</b></center></td><td><center><b style='color:green'>0</b></center></td><td><center><b>0</b></center></td></tr></tbody></table></div>`)[0];
+            popup_b9637677ad624a4cbc7e4e7922ba0e11.setContent(html_857b3b9259fc4a3b8ba5a2830a6587c2);
+        
+
+        marker_456f7485cfaf4c3091fec14f8831b07b.bindPopup(popup_b9637677ad624a4cbc7e4e7922ba0e11)
+        ;
+
+        
+    
+    
+            marker_456f7485cfaf4c3091fec14f8831b07b.bindTooltip(
+                `<div>
+                     West Sumatra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cd21e8aecfd429f92bbe661f68849ca = L.marker(
+                [-7.8753849, 110.4262088],
+                {"legendName": "Indonesia Covid-19"}
+            ).addTo(map_f74c07aa33304bd0a48503d1dbefaaa9);
+        
+    
+        var custom_icon_8ce89bcaa4f64a7781f266f5ea048b1b = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/1200px-Coat_of_arms_of_Yogyakarta.svg.png"});
+        marker_1cd21e8aecfd429f92bbe661f68849ca.setIcon(custom_icon_8ce89bcaa4f64a7781f266f5ea048b1b);
+        
+    
+        var popup_7076a797330841d38d354fd8f22b6a10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d63fa2c2f3044e3c9203a67491884111 = $(`<div id="html_d63fa2c2f3044e3c9203a67491884111" style="width: 100.0%; height: 100.0%;"><h4><b>Yogyakarta</b></h4><table><tbody><tr><th style='color:red'>Confirmed&nbsp;&nbsp;</th><th style='color:green'>Recovered&nbsp;&nbsp;</th><th style='color:black'>Deaths&nbsp;&nbsp;</th></tr><tr><td><center><b style='color:red'>22</b></center></td><td><center><b style='color:green'>1</b></center></td><td><center><b>2</b></center></td></tr></tbody></table></div>`)[0];
+            popup_7076a797330841d38d354fd8f22b6a10.setContent(html_d63fa2c2f3044e3c9203a67491884111);
+        
+
+        marker_1cd21e8aecfd429f92bbe661f68849ca.bindPopup(popup_7076a797330841d38d354fd8f22b6a10)
+        ;
+
+        
+    
+    
+            marker_1cd21e8aecfd429f92bbe661f68849ca.bindTooltip(
+                `<div>
+                     Yogyakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
